@@ -1,7 +1,7 @@
 
 #include "myheader.h"  
 #include "mytree.h"
-
+#include "myfunc.h"
 class Solution
 {
 private:
@@ -29,8 +29,7 @@ double Solution::findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2){
 
 
 int main(){
-    Solution s;
-    
+    Solution s;   
     
     vector<int> ans;
     
@@ -45,12 +44,16 @@ int main(){
        std::swap(a,b);
        cout<<a<<" "<<b<<endl;
     }
-    for(int i =0 ; i<10; ++i ){
-        
-    }; 
+    TreeNode * myroot;
+    
+    TreeNode * root= new TreeNode();
+    root->left = new TreeNode();
     
     
-
+    
+    string str="3+2/34*2";
+    //cout<< calculate(str);
+    int ret = calculate(str);
 
     return 0;
 
